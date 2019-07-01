@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle;font-size:100%}
+button{border:0 none;background-color:transparent;cursor:pointer}
+table{border-collapse:collapse;border-spacing:0}
+body{-webkit-text-size-adjust:none;-ms-text-size-adjust:none}
+input:checked[type=checkbox]{background-color:#666;-webkit-appearance:checkbox;-moz-appearance:checkbox}
+input[type=text],input[type=password],input[type=submit],input[type=search],input[type=tel],input[type=email],html input[type=button],input[type=reset]{-webkit-appearance:none;-moz-appearance:none;border-radius:0}
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;-moz-appearance:none}
+body{min-width:320px;background:#fff}
+body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;font-family:AppleSDGothicNeo-Regular,'맑은 고딕','Malgun Gothic',sans-serif;color:#333}
+a{color:#333;text-decoration:none}
+a:active,a:hover{text-decoration:none}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+
+/* global */
+.ir_pm{display:block;overflow:hidden;font-size:1px;line-height:0;color:transparent}
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%}
+.ir_caption{overflow:hidden;width:1px;font-size:1px;line-height:0;text-indent:-9999px}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.show{display:block}
+.hide{display:none}
+
+/* line */
+.txt_bar{font-size:12px;color:#b6b6b6}
+
+/* Background Image - common 요소 */
+.btn_comm{background:url() no-repeat} /* 버튼 */
+.ico_comm{background:url() no-repeat} /* 아이콘 */
+.tit_comm{background:url() no-repeat} /* 타이틀 */
+.line_comm{background:url() no-repeat} /* 라인 */
+
+/*
+ * Pixel ratio of 1.
+ * m320/header.png 이미지의 가로폭은 100px
+ * #header 요소의 크기(CSS width) 역시 100px
+ * 대상 device :iPhone 3GS, 옵티머스원와 같은 HVGA 디바이스.
+ * IE 6,7,8와 같이 CSS background-size 를 지원하지 않는 구형 브라우저
+ */
+#header{background-image:url(m320/header.png);width:100px;height:50px}
+
+/*
+ * Pixel ratio of 1.5이상 디바이스 대응
+ * m640/header.png 이미지의 가로폭은 200px
+ * background-size 항목을 이용하여 CSS width 기준의 크기(100px)를 명시하여야 한다.
+ * 대상 device :Google Nexus S, Galaxy S 2, HTC Desire,iPhone 4/4S, iPad (3rd generation), Galaxy Nexus, Galaxy S2 HD, Galaxy S3 등
+ */
+@media
+only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:144dpi),
+only screen and (min-resolution:1.5dppx){
+  #header{background-image:url(m640/header.png);background-size:100px 50px}
+}

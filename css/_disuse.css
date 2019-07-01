@@ -1,0 +1,25 @@
+.f_l{float:left}
+.f_r{float:right}
+.cl_b{clear:both;width:0;height:0;font-size:0;line-height:0}
+.tbl{border-collapse:collapse;border-spacing:0}
+.clear_g{display:block;overflow:visible;width:auto;clear:both;*zoom:1}
+.clear_g:after{display:block;visibility:hidden;height:0;font-size:0;clear:both;content:''}
+
+/* border round 3px button style */
+.bround{display:inline-block;padding:0;border:1px solid;border-radius:3px;-webkit-border-radius:3px;font-size:12px;text-decoration:none;text-align:center}
+
+/* padding round 3px button style */
+.pround{display:inline-block;padding:1px;border-radius:3px;-webkit-border-radius:3px;font-size:12px;text-decoration:none}
+.pround .inner{display:inline-block;width:100%;height:100%;border-radius:3px;-webkit-border-radius:3px;text-align:center}
+
+/*
+margin-top:.mg_top10 ~
+margin-bottom:.mg_bot10 ~
+padding-top:.pd_top10 ~
+padding-bottom:.pd_bot10 ~
+font-size:fs_9 / fs_10 ~
+font-family:.ff_gul / .ff_dot / .ff_tah
+(Font) color:.fc_0 / .fc_1 ~
+text-align:.txt_al / .txt_ac / .txt_ar
+text-decoration:.txt_uline / .txt_none
+*/
